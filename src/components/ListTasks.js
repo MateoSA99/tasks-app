@@ -23,7 +23,7 @@ const ListTasks = () => {
 
   const completeTask = id =>{
     const updatedTasks = tasks.map(task => {
-      if (task.id == id) {
+      if (task.id === id) {
         task.completed = !task.completed;
       }
       return task;
